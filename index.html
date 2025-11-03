@@ -6,6 +6,75 @@
     <title>Ushaka Ayurvedic Pharmacy - Ancient Wisdom for Modern Wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        
+        /* Floating Buttons */
+.float {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* WhatsApp green */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.float.call {
+    background-color: #2196F3; /* Blue for call button */
+    bottom: 155px;
+}
+
+.float.whatsapp {
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    box-shadow: 0 0 0 0 #25d366;
+}
+
+.float.call {
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    box-shadow: 0 0 0 0 #2196F3;
+}
+
+.my-float {
+    margin: 0;
+}
+
+@keyframes pulsing {
+    to {
+        box-shadow: 0 0 0 30px rgba(37, 211, 102, 0); /* WhatsApp green fade */
+    }
+}
+
+.float.call .pulsing {
+    box-shadow: 0 0 0 30px rgba(33, 150, 243, 0); /* Blue fade for call */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .float {
+        width: 50%;
+        height: 60px;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .float.whatsapp {
+        left: 0;
+    }
+    .float.call {
+        left: 50%;
+        bottom: 0;
+    }
+}
         * {
             margin: 0;
             padding: 0;
@@ -734,7 +803,12 @@
             <p>&copy; 2024 Ushaka Ayurvedic Pharmacy. All rights reserved.</p>
         </div>
     </footer>
-
+<a href="https://wa.me/+918410554334" class="float whatsapp" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+</a>
+<a href="tel:+918410554334" class="float call" target="_blank">
+    <i class="fas fa-phone my-float"></i>
+</a>
     <!-- JavaScript for Toggle Menu and Interactions -->
     <script>
         // Toggle Mobile Menu
