@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ushaka Ayurvedic Pharmacy | Authentic Ayurvedic Healing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f7f4;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #d45d2a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #b24a20;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo  img {
+      font-size: 28px;
+      font-weight: 700;
+      color: #d45d2a;
+      width: 150px;
+    }
+
+    .logo span {
+      color: #5d8c4a;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #d45d2a;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(powdered-matcha-plate-created-using-generative-ai-technology.webp) no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    /* Features */
+    .features {
+      padding: 60px 0;
+      background: #fff;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      margin: 15px 0;
+      color: #d45d2a;
+    }
+
+    .feature-box i {
+      font-size: 2.5rem;
+      color: #5d8c4a;
+    }
+
+    /* Products */
+    .products {
+      padding: 60px 0;
+      background: #f1f0ec;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-img {
+      height: 180px;
+      background: #e9e7e3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      font-size: 1.1rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #d45d2a;
+      margin: 10px 0;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 60px 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-left: 4px solid #5d8c4a;
+      background: #f9f7f4;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    /* CTA Section */
+    .cta {
+      background: #5d8c4a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn-white {
+      background: white;
+      color: #5d8c4a;
+    }
+
+    .btn-white:hover {
+      background: #f0f0f0;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 50px 0 20px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin: 8px 0;
+    }
+
+    .footer-column a:hover {
+      color: #d45d2a;
+    }
+
+    .social-links a {
+      font-size: 1.3rem;
+      margin-right: 15px;
+      color: #fff;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #555;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jfif" alt="" srcset="">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Consultation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Rediscover Balance with Ayurveda</h1>
+      <p>Authentic herbal medicines, time-tested remedies, and holistic wellness solutions crafted for modern life.</p>
+      <a href="#" class="btn">Shop Now</a>
+      <a href="#" class="btn" style="background: transparent; border: 2px solid white; margin-left: 10px;">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <i class="fas fa-seedling"></i>
+          <h3>100% Natural</h3>
+          <p>Pure herbs, no synthetic additives or chemicals.</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-certificate"></i>
+          <h3>GMP Certified</h3>
+          <p>Manufactured under strict quality standards.</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-truck"></i>
+          <h3>Fast Shipping</h3>
+          <p>Delivered safely to your doorstep across India.</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-user-md"></i>
+          <h3>Expert Guidance</h3>
+          <p>Free consultation with certified Ayurvedic doctors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="container">
+      <h2 class="section-title">Popular Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img">Ashwagandha Capsules</div>
+          <div class="product-info">
+            <h3>Ashwagandha Capsules</h3>
+            <p>Stress relief & immunity booster</p>
+            <div class="price">₹399</div>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">Triphala Churna</div>
+          <div class="product-info">
+            <h3>Triphala Churna</h3>
+            <p>Natural detox & digestion support</p>
+            <div class="price">₹249</div>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">Brahmi Oil</div>
+          <div class="product-info">
+            <h3>Brahmi Oil</h3>
+            <p>For hair growth & mental clarity</p>
+            <div class="price">₹299</div>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">Joint Aid Tablets</div>
+          <div class="product-info">
+            <h3>Joint Aid Tablets</h3>
+            <p>Supports mobility & reduces pain</p>
+            <div class="price">₹450</div>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonial">
+        “After years of joint pain, Ushaka’s Ayurvedic tablets brought real relief. I feel like I’ve got my life back.”
+        <div class="testimonial-author">— Meera S., Mumbai</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Start Your Healing Journey Today</h2>
+      <p>Explore our range of authentic Ayurvedic products or book a free consultation.</p>
+      <a href="#" class="btn btn-white">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Ushaka Ayurveda</h3>
+          <p>Bringing the ancient wisdom of Ayurveda to your home with purity, care, and authenticity.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: support@ushakaayurveda.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Ushaka Ayurvedic Pharmacy. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
