@@ -360,7 +360,7 @@ ease;
             transform: scale(1.05);
         }
 
-        .product-image {
+        . {
             height: 200px;
             background: linear-gradient(135deg, var(--beige) 0%, var(--turmeric) 100%);
             display: flex;
@@ -375,7 +375,7 @@ ease;
         }
 
         .product-name {
-            font-size: 1.2rem;
+            font-size: 16px;
             color: var(--primary-green);
             margin-bottom: 0.5rem;
         }
@@ -486,20 +486,32 @@ ease;
             .hamburger {
                 display: flex;
             }
+            .hamburger span
 
-            .nav-menu {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                flex-direction: column;
-                background-color: var(--primary-green);
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-                padding: 2rem 0;
-                gap: 0;
-            }
+ {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+           @media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+        gap: 0;
+    }
+}
 
             .nav-menu.active {
                 left: 0;
@@ -669,49 +681,49 @@ ease;
         <h2 class="section-title">Featured Products</h2>
         <div class="products-grid">
             <div class="product-card fade-in">
-                <div class="product-image">
-                    <i class="fas fa-leaf"></i>
+                <div class="">
+                    <img width="100%" src="511evxCQ4vL._SX522_.jpg" alt="" srcset="">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Ashwagandha Capsules</h3>
-                    <p style="color: var(--text-light); margin-bottom: 1rem;">Stress relief and vitality boost</p>
-                    <p class="product-price">$24.99</p>
+                    <h3 class="product-name">Ushaka Coconut Hair Oil – 500ml</h3>
+                    
+                    <p class="product-price">₹209</p>
                     <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
                 </div>
             </div>
             
             <div class="product-card fade-in">
-                <div class="product-image">
-                    <i class="fas fa-spa"></i>
+                <div class="">
+                    <img  width="100%" src="31DbR9BIZmL.jpg" alt="" sizes="" srcset="">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Triphala Powder</h3>
-                    <p style="color: var(--text-light); margin-bottom: 1rem;">Gentle detox and digestion support</p>
-                    <p class="product-price">$19.99</p>
+                    <h3 class="product-name">Ushaka Ayurvedic Satreetha Shampoo </h3>
+                    
+                    <p class="product-price">₹ 120/Piece</p>
                     <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
                 </div>
             </div>
             
             <div class="product-card fade-in">
-                <div class="product-image">
-                    <i class="fas fa-brain"></i>
+                <div class="">
+                    <img width="100%" src="81UF7VB9S0L._SX522_.jpg" alt="">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Brahmi Oil</h3>
-                    <p style="color: var(--text-light); margin-bottom: 1rem;">Mental clarity and hair health</p>
-                    <p class="product-price">$29.99</p>
+                    <h3 class="product-name">Ushaka Lauki Oil – Deep Nourishment for Hair & Skin</h3>
+                   
+                    <p class="product-price">₹350</p>
                     <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
                 </div>
             </div>
             
             <div class="product-card fade-in">
-                <div class="product-image">
-                    <i class="fas fa-moon"></i>
+                <div class="">
+                   <img width="100%" src="41rt1BNI1lL.jpg" alt="" srcset="">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Sleep Easy Formula</h3>
-                    <p style="color: var(--text-light); margin-bottom: 1rem;">Natural sleep support blend</p>
-                    <p class="product-price">$22.99</p>
+                    <h3 class="product-name">Ushaka Chameli Hair Oil</h3>
+                    
+                    <p class="product-price">₹240</p>
                     <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
                 </div>
             </div>
